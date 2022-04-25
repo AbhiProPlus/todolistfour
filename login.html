@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body style="background-image: url(360_F_119115529_mEnw3lGpLdlDkfLgRcVSbFRuVl6sMDty.jpg);">
+
+
+
+    
+<div style="padding-top: 2cm; padding-left: 2cm;">    <h1 >   Login </h1>   </div>
+
+
+
+<!-- <div style="padding-left: 10cm; padding-top: 1cm;">   
+    <form action="todolist.html">
+
+        <div class="mb-3" style="font-size: 1cm; color: chartreuse;">
+          <label for="text" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username" >
+          <div id="Username" class="form-text"></div>
+        </div>
+        
+        <br>
+        <br>
+
+        <div class="mb-3"  style="font-size: 1cm; color: chartreuse ;">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="Password">
+        </div>
+
+        <br>
+        <br>
+
+        <div class="mb-3 form-check"> -->
+          <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
+          <!-- <label class="form-check-label" for="exampleCheck1">Check me out</label> -->
+        <!-- </div>
+        <button style="font-size: 1cm;" type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+</div>
+
+<script>
+
+function validate()
+{
+
+    var username = document.getElementById("username");
+    var password = document.getElementById("password");
+
+
+
+    if(username.value=="admin"){
+
+    return true;
+  } else
+  return false;
+
+
+}
+
+
+
+
+</script> -->
+
+<div style="font-size: 1cm; padding: left 5cm; color: chartreuse ;">
+
+ 
+    
+        
+        <form name="login" action="todolist.html ">
+            Username<input type="text" name="userid"/>
+            Password<input type="password" name="pswrd"/>
+            <input  type="button" onclick="check(this.form)" value="Login"/>
+            <input type="reset" value="Cancel"/>
+        </form>
+        <script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.userid.value == "admin" && form.pswrd.value == "12345") {
+                    window.open('todolist.html')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Error Password or Username")/*displays error message*/
+                }
+            }
+        </script>
+    
+
+
+</div>
+
+
+<script src="ajax.js"></script>
+   
+</body>
+</html>
